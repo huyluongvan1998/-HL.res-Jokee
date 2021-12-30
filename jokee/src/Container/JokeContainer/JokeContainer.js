@@ -1,28 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
+import { fetchJokes } from '../../action/jokeActions';
 import Banner from '../../Components/Banner/Banner';
 import Button from '../../Components/Button/Button';
+import Joke from '../../Components/Joke/Joke';
+import { Spinner } from '../../Components/Spinner/Spinner';
 
 const JokeContainer = () => {
+  const dispatch = useDispatch();
+  const jokeList = useSelector((state) => state.jokeList);
+  // eslint-disable-next-line no-unused-vars
+  const { loading, error, jokes } = jokeList;
+
+  useEffect(() => {
+    dispatch(fetchJokes());
+  }, [dispatch]);
   return (
     <main>
       <Banner />
-      <div className='joke'>
-        <div className='joke-content'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ipsa
-          reiciendis laborum facere quas deleniti at quisquam amet nobis,
-          aspernatur culpa velit alias soluta. Deserunt suscipit dolore velit
-          fuga. Reprehenderit quibusdam earum facilis ducimus sequi, labore
-          accusamus velit obcaecati laboriosam accusantium nobis et aut,
-          excepturi, beatae nostrum quidem. In illo neque dolores odio accusamus
-          ratione deleniti, voluptatibus facilis id dignissimos, doloremque
-          adipisci cupiditate esse cum debitis, commodi consequatur nesciunt eos
-          molestiae. Exercitationem ullam nemo laudantium minus, assumenda fuga.
-          Laborum dolores ratione non cumque mollitia corrupti sit
-          necessitatibus sequi a ducimus voluptatibus eos, minus error ab,
-          aspernatur officia maiores veniam quaerat?
-        </div>
-      </div>
+      <div className='joke'>{loading ? <Spinner /> : <Joke />}</div>
       <div className='joke-button'>
         <Button type='primary' content='this is Funny!' />
         <Button type='success' content='this is not Funny.' />

@@ -56,10 +56,8 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-  .joke {
-    &-content {
-      margin: 0 20em;
-    }
+  .joke-content {
+    margin: 0 10em;
   }
 }
 
