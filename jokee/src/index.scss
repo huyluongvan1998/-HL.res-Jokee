@@ -24,6 +24,10 @@ code {
   color: #d1cfc8;
   font-weight: 700;
 }
+.black-500 {
+  font-weight: 500;
+  font-size: 20px;
+}
 //Color
 .grey-1 {
   color: #d2d2cf;
@@ -88,4 +92,10 @@ code {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.error {
+  color: red;
+  font-weight: bolder;
+  text-align: center;
 }

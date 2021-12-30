@@ -57,7 +57,25 @@ main {
     align-items: center;
   }
   .joke-content {
+    text-align: center;
     margin: 0 10em;
+  }
+  .counter {
+    text-align: center;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-like {
+      width: 10%;
+      padding: 20px;
+      background-color: #4ee44e;
+    }
+    &-hate {
+      width: 10%;
+      padding: 20px;
+      background-color: red;
+    }
   }
 }
 

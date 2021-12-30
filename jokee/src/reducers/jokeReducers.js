@@ -4,15 +4,15 @@ import {
   JOKE_REQUEST_SUCCESS,
 } from '../constants/jokeConstants';
 
-export const jokeReducers = (state = { jokes: [] }, action) => {
+export const jokeReducers = (state = {}, action) => {
   switch (action.type) {
     case JOKE_REQUEST:
-      return { loading: true, ...state };
+      return { loading: true };
     case JOKE_REQUEST_SUCCESS:
       const joke = action.payload;
       return {
         loading: false,
-        jokes: [...state.jokes, joke],
+        joke: joke,
       };
     case JOKE_REQUEST_FAIL:
       return { loading: false, error: action.payload };
