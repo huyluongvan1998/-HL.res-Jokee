@@ -49,13 +49,24 @@ main {
       text-align: center;
     }
   }
+  .joke-button {
+    margin: 3em auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .joke {
-    &-button {
-      margin: 3em auto;
-      width: 50%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &-content {
+      margin: 0 20em;
     }
+  }
+}
+
+footer {
+  height: 20%;
+  border-top: 1px solid #d2d2cf;
+  .content {
+    text-align: center;
   }
 }

@@ -20,6 +20,10 @@ code {
   color: whitesmoke;
   font-weight: 700;
 }
+.grey-700 {
+  color: #d1cfc8;
+  font-weight: 700;
+}
 //Color
 .grey-1 {
   color: #d2d2cf;
@@ -37,10 +41,20 @@ code {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 16px;
 }
+
 .btn-primary {
   background: rgba(0, 0, 255, 0.7);
 }
+.btn-primary:hover {
+  background-color: rgba(0, 0, 255, 1);
+}
 .btn-success {
   background: rgba(0, 255, 0, 0.7);
+}
+.btn-success:hover {
+  background-color: rgba(0, 255, 0, 1);
 }
