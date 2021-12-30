@@ -11,10 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.margin-0 {
+  margin: 0 !important;
+}
 //Font
+.font-9 {
+  font-size: 9px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-25 {
+  font-size: 25px;
+}
 .white-400 {
   color: whitesmoke;
   font-weight: 400;
+}
+.white-500 {
+  color: whitesmoke;
+  font-weight: 500;
+  word-spacing: 5px;
 }
 .white-700 {
   color: whitesmoke;
@@ -28,6 +45,10 @@ code {
   font-weight: 500;
   font-size: 20px;
 }
+.black-700 {
+  font-family: 700;
+  color: #000;
+}
 //Color
 .grey-1 {
   color: #d2d2cf;
@@ -36,18 +57,21 @@ code {
 .green-bg-1 {
   background-color: #4ee44e;
 }
+
 //Button
 .button {
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 35px;
+  width: 15em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
+  margin: 1em;
   cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   transition-duration: 0.4s;
-  border-radius: 16px;
 }
 
 .btn-primary {

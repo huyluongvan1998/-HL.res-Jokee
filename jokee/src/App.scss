@@ -1,14 +1,12 @@
 header {
-  margin: 0 3em;
   .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: space-around;
     .brand {
-      width: 8%;
-      height: 8%;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
     }
 
@@ -41,8 +39,8 @@ header {
 main {
   .banner {
     width: 100%;
-    padding: 3em 0;
-    margin: 1em 0;
+    padding: 3.5em 0;
+    margin: 1em 0 3em 0;
     display: flex;
     justify-content: center;
     &-content {
@@ -50,15 +48,13 @@ main {
     }
   }
   .joke-button {
-    margin: 3em auto;
-    width: 50%;
+    margin: 7em auto 5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .joke-content {
     text-align: center;
-    margin: 0 10em;
   }
   .counter {
     text-align: center;
@@ -84,5 +80,11 @@ footer {
   border-top: 1px solid #d2d2cf;
   .content {
     text-align: center;
+    color: #949494;
+
+    p {
+      width: 60%;
+      margin: 2em auto;
+    }
   }
 }
